@@ -1,0 +1,30 @@
+
+
+.card-body h1 {
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #0a7b06, rgb(248, 246, 246), #0a7b06);
+    background-repeat: no-repeat;
+    background-size: 85%;
+    animation: animate 5s linear infinite;
+    -webkit-background-clip: text;
+        background-clip: inset 0 0 6px(0,0,0,0.1);
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+
+.form-control::placeholder { 
+    color: white;
+    opacity: 0.8; 
+}

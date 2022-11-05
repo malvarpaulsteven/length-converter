@@ -14,18 +14,24 @@
         <div class="row align-items-center vh-100">
             <div class="col-md-6 mx-auto">
                 <div class="card-body d-flex-lg flex-column align-items-center">
-                    <h1 class="mb-5 text-center text-success fw-bold">
-                        <i class="fa-solid fa-arrows-spin"></i>
-                        Converter
-                    </h1>
-                    <div class="d-flex gap-4 ">
-                        <input class="text-light form-control form-control-lg bg-success" type="number" placeholder="Input" id="input">
-                        <input class="text-light form-control form-control-lg bg-success" type="number" placeholder="Result" id="result">
-                    </div>
-                    <div class="d-flex gap-4 pb-4">
-                        <select class="form-select" id="inputType">
-                            <option selected>-Select-</option>
-                            <option value="km">Kilometer</option>
+                    <div class="lead waviy text-center text-info">
+                        <span style="--i:1">C</span>
+                        <span style="--i:2">O</span>
+                        <span style="--i:3">N</span>
+                        <span style="--i:4">V</span>
+                        <span style="--i:5">E</span>
+                        <span style="--i:6">R</span>
+                        <span style="--i:7">T</span>
+                        <span style="--i:8">E</span>
+                        <span style="--i:9">R</span>
+                        <span style="--i:10">.</span>
+                       </div>
+                    <hr class="text-light">
+                    <span class="lead text-white fs-6">From</span>
+                    <div class="d-flex gap-2 mb-4">
+                        <input class="text-light form-control form-control bg-primary" type="number" placeholder="Input" id="input">
+                        <select class="form-select bg-primary text-light" id="inputType">
+                            <option selected value="km">Kilometer</option>
                             <option value="m">Meter</option>
                             <option value="cm">Centimeter</option>
                             <option value="mm">Millimeter</option>
@@ -36,9 +42,12 @@
                             <option value="ft">Foot</option>
                             <option value="in">Inch</option>
                         </select>
-                        <select class="form-select" id="resultType">
-                            <option selected>-Select-</option>
-                            <option value="km">Kilometer</option>
+                    </div>
+                    <span class="lead text-white fs-6">To</span>
+                    <div class="d-flex gap-2">
+                        <input class="text-light form-control form-control bg-danger" type="number" placeholder="Result" id="result">
+                        <select class="form-select bg-danger text-light" id="resultType">
+                            <option selected value="km">Kilometer</option>
                             <option value="m">Meter</option>
                             <option value="cm">Centimeter</option>
                             <option value="mm">Millimeter</option>

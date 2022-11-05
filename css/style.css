@@ -1,30 +1,37 @@
+body{
+    background-image: url('https://i.gifer.com/4NB4.gif');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
 
-
-.card-body h1 {
+.waviy {
     position: relative;
-    font-family: sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    overflow: hidden;
-    background: linear-gradient(90deg, #0a7b06, rgb(248, 246, 246), #0a7b06);
-    background-repeat: no-repeat;
-    background-size: 85%;
-    animation: animate 5s linear infinite;
-    -webkit-background-clip: text;
-        background-clip: inset 0 0 6px(0,0,0,0.1);
-    -webkit-text-fill-color: rgba(255, 255, 255, 0);
   }
-  
-  @keyframes animate {
-    0% {
-      background-position: -500%;
-    }
-    100% {
-      background-position: 500%;
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    text-transform: uppercase;
+    animation: flip 4s infinite;
+    animation-delay: calc(.4s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
     }
   }
 
 .form-control::placeholder { 
     color: white;
     opacity: 0.8; 
+}
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -moz-appearance:    none;
+   appearance:         none
 }
